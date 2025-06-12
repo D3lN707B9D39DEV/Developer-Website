@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - D3lN707B9D39</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="mobile-menu">
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <h1>D3lN707B9D39</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="#" class="active">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <h2>Kontaktiere mich</h2>
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <p>Deine Nachricht wird direkt zu mir geschickt</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <p>Ich antworte innerhalb von 24 Stunden</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>Alle Daten sind sicher und verschlüsselt</p>
+                </div>
+            </div>
+            <form action="https://formspree.io/f/xgvykpbj" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Dein Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" required placeholder="Deine E-Mail">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Betreff</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Bitte wählen</option>
+                        <option value="Projektanfrage">Projektanfrage</option>
+                        <option value="Kooperation">Kooperation</option>
+                        <option value="Sonstiges">Sonstiges</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Nachricht</label>
+                    <textarea id="message" name="message" rows="8" required placeholder="Deine Nachricht..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Nachricht senden</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 D3lN707B9D39. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
